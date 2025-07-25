@@ -1,0 +1,419 @@
+
+:root {
+  /* Colores originales */
+  --color-fondo: #1c0f13; /* Fondo oscuro, elegante, para secciones principales */
+  --color-secundario: #643333; /* Tono cálido rojizo, para fondos secundarios o detalles */
+  --color-destacado: #bfa060; /* Dorado cálido, para acentos y elementos destacados */
+  --color-claro: #e8e3dd; /* Neutro claro, para fondos o textos sobre oscuro */
+  --color-blanco: #f6f1eb; /* Blanco cálido, para textos principales o fondos */
+  --color-acento: #5f6d59; /* Verde apagado, para detalles sutiles */
+
+  /* Nuevos colores para textos y más */
+  --color-texto-secundario: #d4cdc3; /* Variación más suave de --color-claro, para textos secundarios */
+  --color-texto-destacado: #d9b875; /* Variación más clara de --color-destacado, para énfasis */
+  --color-fondo-claro: #f9f6f2; /* Blanco más suave que --color-blanco, para fondos alternativos */
+  --color-acento-secundario: #7a8a74; /* Verde más claro que --color-acento, para detalles adicionales */
+  --color-interactivo: #8b5e3c; /* Tono cálido terroso, para botones o enlaces */
+  --color-interactivo-hover: #a3724e; /* Variación más clara de interactivo, para hover */
+  --color-borde: #4a3c3a; /* Tono oscuro intermedio, para bordes o separadores */
+  --color-sombra: rgba(28, 15, 19, 0.3); /* Sombra suave basada en --color-fondo */
+}
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-claro);
+}
+
+header {
+  background: var(--color-secundario);
+  color: var(--color-blanco);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-blanco);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--color-acento);
+}
+
+.hero {
+  background: linear-gradient(to right, #1c0f13, #5a1b2e);
+  padding: 100px 20px;
+  text-align: center;
+  color: var(--color-blanco);
+}
+
+.hero h2 {
+  font-size: 3em;
+  color: var(--color-destacado);
+  text-shadow: 2px 2px 10px black;
+}
+
+.hero p {
+  font-size: 1.2em; /* Aumenté ligeramente el tamaño para mejor legibilidad */
+  color: var(--color-oscuro); /* Cambiado a un marrón oscuro para que sea legible */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Añadí un text-shadow más suave para mejorar el contraste */
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: var(--color-secundario);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(187, 5, 5, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 5px 0;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  color: var(--color-claro)
+}
+
+
+
+#sobre-nosotros {
+  padding: 40px 20px;
+  background: var(--color-secundario);
+  text-align: center;
+}
+
+.sobre-nosotros-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.sobre-nosotros-content p {
+  font-size: 1.1rem;
+  color: var(--color-oscuro);
+  margin-bottom: 15px;
+}
+
+.btn-llamada {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--color-acento);
+  color: var(--color-oscuro);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-llamada:hover {
+  background: var(--color-madera);
+  color: var(--color-blanco);
+}
+
+.pie-pagina {
+  background: var(--color-madera);
+  color: var(--color-blanco);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--color-blanco);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--color-acento);
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.footer-section p i {
+  margin-right: 10px;
+}
+
+.footer__copy {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--color-acento);
+}
+
+.arriba {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: var(--color-blanco);
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.arriba:hover {
+  color: var(--color-acento);
+}
+
+
+
+/* Nosotros*/
+.pagina-nosotros .encabezado-nosotros {
+  background: var(--color-madera);
+  color: var(--color-blanco);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--color-oscuro); /* si quieres usar el color institucional */
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--color-oscuro); /* si quieres usar el color institucional */
+}
+
+.encabezado-nosotros {
+  background: url('../images/taller.jpg') no-repeat center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.encabezado-nosotros h1 {
+  font-size: 3em;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.sobre-nosotros-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.integrantes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Ajusta esto para bajar la imagen */
+}
+.integrante img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 80%; /* Circular */
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    display: block;
+    margin: 20px auto 0 auto;
+    object-position: center 10%;
+}
+
+.integrante h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.integrante p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+
+
+
+.historia, .mision-vision, .valores-pagina, .equipo, .cta {
+  padding: 60px 20px;
+}
+
+.historia .contenedor,
+.mision-vision .contenedor,
+.valores-pagina .contenedor,
+.equipo .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.historia img,
+.equipo img {
+  max-width: 300px;
+  border-radius: 15px;
+}
+.img-fija {
+ 
+  top: 50%;
+  left: 50%;
+
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 90%;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.valor {
+  background-color: var(--color-interactivo);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cta {
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+.cta .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #967351;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.historia .contenedor,
+.mision-vision .contenedor,
+.equipo .contenedor,
+.valores-pagina .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.historia img, .equipo img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.valor, .miembro {
+  text-align: center;
+  max-width: 300px;
+}
+
+.valor img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Animación fade-in desde abajo */
+@keyframes aparecerDesdeAbajo {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .integrantes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Clase que se aplicará dinámicamente */
+.animar-valores {
+  animation: aparecerDesdeAbajo 1s ease-out forwards;
+}

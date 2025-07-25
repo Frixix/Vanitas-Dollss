@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Vanitas Dolls</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/tu-codigo.js" crossorigin="anonymous"></script>
+</head>
+<body class="pagina-contacto">
+
+  <header class="encabezado-nosotros">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contact.html" class="activo">Contacto</a></li>
+      </ul>
+      <h1>Contáctanos</h1>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contacto">
+      <div class="contenedor">
+        <h2>Escríbenos</h2>
+        <p>¿Tienes una muñeca para restaurar? ¿Quieres una pieza personalizada o alquilar una de nuestras obras para una película o exposición? Completa el formulario y nos pondremos en contacto contigo.</p>
+
+        <form action="https://formsubmit.co/vanitasdolls@gmail.com" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto">
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+
+        <div class="datos-contacto">
+          <h3>También puedes escribirnos directamente:</h3>
+          <p><i class="fa-solid fa-envelope"></i> vanitasdolls@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 322 3540455 / 313 3054723</p>
+          <p><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</p>
+          <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/vanitas_dolls/" target="_blank">@vanitas_dolls</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Vanitas Dolls</h3>
+        <p>Museo Itinerante y Hospital de Juguetes. Arte, restauración y piezas únicas.</p>
+        <p><i class="fa-solid fa-phone"></i> 322 3540455 / 313 3054723</p>
+        <p><i class="fa-solid fa-envelope"></i> vanitasdolls@gmail.com</p>
+        <p><i class="fa-solid fa-map-marker-alt"></i> Bogotá, Colombia</p>
+      </div>
+      <div class="footer-section">
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="#">Restauración</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Muñecas Artísticas</a></li>
+          <li><a href="#">Exposiciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="footer__copy">
+      <p>© 2025 Vanitas Dolls - Todos los Derechos Reservados "Creada por Robinson Rodriguez".</p>
+    </section>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
